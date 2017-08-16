@@ -1,19 +1,11 @@
 import React, { Component } from 'react'
-import { View, Text, StyleSheet, TextInput } from 'react-native'
+import { View, Text, StyleSheet } from 'react-native'
 
 class Header extends Component {
   render() {
     return (
       <View style={styles.header}>
-        <TextInput
-          value={this.props.value}
-          onChangeText={this.props.onChange}
-          onSubmitEditing={this.props.onAddItem}
-          placeholder="Waz needz to be done darlz?"
-          blurOnSubmit={false}
-          returnKeyType="done"
-          style={styles.input}
-        />
+        <Text style={styles.headerText}>Identity</Text>
       </View>
     )
   }
@@ -21,13 +13,15 @@ class Header extends Component {
 
 const styles = StyleSheet.create({
   header: {
-    paddingHorizontal: 16,
+    padding: 16,
     flexDirection: 'row',
-    justifyContent: 'space-between',
+    justifyContent: 'center',
     alignItems: 'center'
   },
-  input: {
-    flex: 1
+  headerText: {
+    color: 'green',
+    fontSize: 30,
+    fontFamily: 'helvetica',
   }
 })
 
