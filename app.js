@@ -48,7 +48,7 @@ class App extends Component {
   }
 
   
-// naming: change value to newTask
+// TODO: naming: change value to newTask
   render () {
     return (
       <View style={styles.container}>
